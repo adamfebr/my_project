@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        </ul>
+    </nav>
+    <h1>idola!</h1>
+    <div class="card-container">
+        <div class="card">
+            <h2>Lionel Messi</h2>
+            <p>Lionel Andrés "Leo" Messi adalah pemain sepak bola profesional asal Argentina yang bermain sebagai penyerang untuk klub Major League Soccer, Inter Miami CF dan merupakan kapten timnas Argentina..</p>
+        </div>
+        <div class="card">
+            <h2>David Beckham</h2>
+            <p>David Robert Joseph Beckham, OBE adalah mantan pemain sepak bola asal Inggris. Ia merupakan presiden petahana sekaligus salah satu pemilik klub sepak bola Inter Miami CF</p>
+        </div>
+    </div>
+</body>
+</html>
